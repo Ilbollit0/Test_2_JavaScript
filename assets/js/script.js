@@ -88,9 +88,8 @@ if (a > b && a > c) {
 /* SCRIVI QUI LA TUA RISPOSTA */
 
 let totale = 66.32;
- 
-// con if/else
 let spedizione;
+
 if (totale >= 100) {
   spedizione = 0;
 } else {
@@ -100,7 +99,6 @@ console.log(
   `Totale carrello: ${totale}€ — Spedizione: ${spedizione}€ — Totale finale: ${totale + spedizione}€`,
 );
 
-
 /* ESERCIZIO 7 — typeof check
    Crea un array con 3 valori diversi (es. [42, 'ciao', true]).
    Con un for + if, per ogni elemento stampa 'x è un numero' o 'x non è un numero'.
@@ -109,7 +107,7 @@ console.log(
 /* SCRIVI QUI LA TUA RISPOSTA */
 
 const valori = [42, "helloworld", true];
- 
+
 for (let i = 0; i < valori.length; i++) {
   if (typeof valori[i] === "number") {
     console.log(`${valori[i]} è un numero`);
@@ -117,7 +115,6 @@ for (let i = 0; i < valori.length; i++) {
     console.log(`${valori[i]} non è un numero`);
   }
 }
-
 
 /* ESERCIZIO 8 — Array dei numeri
    Array vuoto. Aggiungi 1..5 con push. Aggiungi 0 all'inizio con unshift.
@@ -128,10 +125,8 @@ for (let i = 0; i < valori.length; i++) {
 
 const numeri = [];
 numeri.push(1, 2, 3, 4, 5);
-numeri.unshift(0);
 console.log(numeri);
 console.log(numeri.length);
-
 
 /* ESERCIZIO 9 — Carrello con splice
    Array ['Penna', 'Quaderno', 'Zaino', 'Astuccio'].
@@ -142,12 +137,12 @@ console.log(numeri.length);
 /* SCRIVI QUI LA TUA RISPOSTA */
 
 const carrello = ("Penna", "Quaderno", "Zaino", "Astuccio");
- 
+
 carrello.splice(1, 1);
 console.log(carrello);
- 
+
 carrello.splice(1, 0, "Diario");
-console.log(carrello)
+console.log(carrello);
 
 /* ESERCIZIO 10 — Cerca un articolo
    Array prodotti = ['Penna', 'Quaderno', 'Zaino'].
