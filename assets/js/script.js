@@ -87,6 +87,20 @@ if (a > b && a > c) {
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
+const totale = 66.32;
+ 
+// con if/else
+let spedizione;
+if (totale >= 100) {
+  spedizione = 0;
+} else {
+  spedizione = 10.99;
+}
+console.log(
+  `Totale carrello: ${totale}€ — Spedizione: ${spedizione}€ — Totale finale: ${totale + spedizione}€`,
+);
+
+
 /* ESERCIZIO 7 — typeof check
    Crea un array con 3 valori diversi (es. [42, 'ciao', true]).
    Con un for + if, per ogni elemento stampa 'x è un numero' o 'x non è un numero'.
@@ -94,7 +108,7 @@ if (a > b && a > c) {
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
-const valori = [42, "ciao", true];
+const valori = [42, "helloworld", true];
  
 for (let i = 0; i < valori.length; i++) {
   if (typeof valori[i] === "number") {
