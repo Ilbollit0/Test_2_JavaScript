@@ -87,7 +87,7 @@ if (a > b && a > c) {
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
-const totale = 66.32;
+let totale = 66.32;
  
 // con if/else
 let spedizione;
