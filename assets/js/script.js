@@ -126,6 +126,13 @@ for (let i = 0; i < valori.length; i++) {
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
+const numeri = [];
+numeri.push(1, 2, 3, 4, 5);
+numeri.unshift(0);
+console.log(numeri);
+console.log(numeri.length);
+
+
 /* ESERCIZIO 9 — Carrello con splice
    Array ['Penna', 'Quaderno', 'Zaino', 'Astuccio'].
    Con splice: rimuovi 'Quaderno', poi inserisci 'Diario' al suo posto.
@@ -133,6 +140,14 @@ for (let i = 0; i < valori.length; i++) {
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+
+const carrello = ("Penna", "Quaderno", "Zaino", "Astuccio");
+ 
+carrello.splice(1, 1);
+console.log(carrello);
+ 
+carrello.splice(1, 0, "Diario");
+console.log(carrello)
 
 /* ESERCIZIO 10 — Cerca un articolo
    Array prodotti = ['Penna', 'Quaderno', 'Zaino'].
