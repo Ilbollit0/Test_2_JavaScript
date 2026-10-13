@@ -13,12 +13,26 @@ REGOLE
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
+const person = {
+  nome: "Paperon",
+  cognome: "Depaperonis",
+  eta: 25,
+  citta: "Dollaro city",
+};
+console.log(
+  `${person.nome} ${person.cognome}, ${person.eta} anni, vive a ${person.citta}.`,
+);
+
 /* ESERCIZIO 2 — Aggiungi e rimuovi
    Sull'oggetto 'persona': aggiungi 'email', poi rimuovi 'eta'.
    Stampa l'oggetto risultante.
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+
+person.email = "papera.ricca@email.it";
+delete person.eta;
+console.log(person);
 
 /* ESERCIZIO 3 — Oggetto annidato
    Oggetto 'utente' con una proprietà 'indirizzo' (oggetto con via, citta, cap).
@@ -27,6 +41,12 @@ REGOLE
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
+const utente = {
+  nome: "Paperon",
+  indirizzo: { via: "Via Paperix 1", citta: "Dollaro city", cap: "102030" },
+};
+console.log(utente.indirizzo.cap);
+
 /* ESERCIZIO 4 — Bracket dinamica
    Sull'oggetto 'persona', variabile chiave = 'nome'.
    Stampa il valore con bracket notation usando la variabile chiave.
@@ -34,12 +54,30 @@ REGOLE
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
+const chiave = "nome";
+console.log(person[chiave]);
+
 /* ESERCIZIO 5 — Numero più grande
    Tre numeri a, b, c.
    Con if/else if, stampa il più grande. Se pareggio al massimo, stampa 'Pareggio'.
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+
+const a = 100;
+const b = 120;
+const c = 90;
+
+if (a > b && a > c) {
+  console.log(`Il più grande è a: ${a}`);
+} else if (b > a && b > c) {
+  console.log(`Il più grande è b: ${b}`);
+} else if (c > a && c > b) {
+  console.log(`Il più grande è c: ${c}`);
+} else {
+  console.log("Pareggio");
+}
+
 
 /* ESERCIZIO 6 — E-commerce: spedizione
    Variabile 'totale'.
