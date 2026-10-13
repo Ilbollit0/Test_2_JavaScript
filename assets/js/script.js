@@ -78,7 +78,6 @@ if (a > b && a > c) {
   console.log("Pareggio");
 }
 
-
 /* ESERCIZIO 6 — E-commerce: spedizione
    Variabile 'totale'.
    Se totale >= 50 spedizione gratuita, altrimenti 9.90.
@@ -94,6 +93,18 @@ if (a > b && a > c) {
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+
+const valori = [42, "ciao", true];
+ 
+for (let i = 0; i < valori.length; i++) {
+  if (typeof valori[i] === "number") {
+    console.log(`${valori[i]} è un numero`);
+  } else {
+    console.log(`${valori[i]} non è un numero`);
+  }
+}
+
+
 /* ESERCIZIO 8 — Array dei numeri
    Array vuoto. Aggiungi 1..5 con push. Aggiungi 0 all'inizio con unshift.
    Stampa array e length.
