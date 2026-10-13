@@ -1,4 +1,4 @@
-const persona = { nome: "Mario", cognome: "cognome", eta: 25, attivo: true };
+const persona = { nome: "Mario", cognome: "Rossi", eta: 25, attivo: true };
 
 console.table(persona);
 
@@ -16,10 +16,40 @@ console.table(mesi);
 
 console.log(mesi[0]);
 console.log(mesi.length);
-console.log(mesi[mesi.length-1]);
+console.log(mesi[mesi.length - 1]);
 
-mesi.push('Giugno');
+mesi.push("Giugno");
 console.log(mesi);
 
-let tolto= mesi.pop()
-console.log(mesi, 'Mese rimosso: ${Giugno}');
+let tolto = mesi.pop();
+console.log(mesi, "Mese rimosso: ${tolto}");
+
+mesi.push("Giugno");
+console.log(mesi);
+
+let tolto2 = mesi.shift();
+console.log(mesi, "Mese rimosso: ${tolto2}");
+
+mesi.unshift('Giugno');
+console.log(mesi);
+
+
+const students = [
+    {
+        nome: 'Mario',
+        cognome: 'Sturniolo'
+    },
+    {
+        nome: 'Lello',
+        cognome: 'Fassio'
+    },
+    {
+        nome: 'Mirko',
+        cognome: 'Sturniolo'
+    },
+];
+
+
+console.log(students)
+console.log(students[1].cognome)
+
