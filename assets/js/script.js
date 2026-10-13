@@ -64,9 +64,9 @@ console.log(person[chiave]);
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
-const a = 100;
-const b = 120;
-const c = 90;
+let a = 100;
+let b = 120;
+let c = 90;
 
 if (a > b && a > c) {
   console.log(`Il più grande è a: ${a}`);
