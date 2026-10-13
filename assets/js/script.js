@@ -16,4 +16,10 @@ console.table(mesi);
 
 console.log(mesi[0]);
 console.log(mesi.length);
-console.log(mesi[mesi.lenght - 1]);
+console.log(mesi[mesi.length-1]);
+
+mesi.push('Giugno');
+console.log(mesi);
+
+let tolto= mesi.pop()
+console.log(mesi, 'Mese rimosso: ${Giugno}');
